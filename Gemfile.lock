@@ -257,7 +257,16 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 227)
-  webrick (~> 1.7)
+  jekyll-feed
+  jekyll-paginate
+  jekyll-seo-tag
+  jekyll-sitemap
+  kramdown-parser-gfm
+  tzinfo-data
+  webrick
+
+RUBY VERSION
+   ruby 3.1.3p185
 
 BUNDLED WITH
    2.4.5

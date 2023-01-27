@@ -1,30 +1,48 @@
 ---
 layout: default
 ---
-<link href="/css/override.css" rel="stylesheet" type="text/css">
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {% assign author = page.author | default: site.author %}
-      {%- if author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+<!--                            
+This layout is used for posts. Changing anything here will affect all posts(not pages)
+ -->
 
-  <div class="share-links">
-    {% include sharelinks.html %}
-  </div>
+{% include breadcrumbs.html %}
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-    {% include navlinks.html %}
-  </div>
+<div class="meta" data-aos="fade-up">
+  <p>
+    <small>
+      <span>
+        <i class="fa fa-calendar" aria-hidden="true"></i> {{page.date |
+        date_to_string }}&nbsp;
+      </span>
+      <span>
+        <i class="fa fa-user" aria-hidden="true"></i> {{page.author }}&nbsp;
+      </span>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+      <span>
+        <i class="fa fa-clock-o" aria-hidden="true"></i> {% include
+        reading-time.html %}
+      </span>
+    </small>
+  </p>
+</div>
+
+<div
+  class="featured-image rounded shadow"
+  style="background-image: url({{page.image | relative_url }})"
+  data-aos="zoom-in"
+></div>
+
+<div class="container">
+  <article>
+    {% if site.toc %} {% include toc.html html=content class="toc rev clearfix"
+    %} {% endif %} {{content}}
+  </article>
+</div>
+<hr class="dashed" />
+<div class="container">
+  {% if site.share %} {% include share-buttons.html %} {% endif %} {% if
+  page.categories %} {% include categories-post.html %} {% endif %} {% if
+  site.disqus %} {% include disqus.html %} {% endif %} {% if site.recent-posts
+  %} {% include recent.html %} {% endif %}
+</div>
