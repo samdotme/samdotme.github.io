@@ -1,4 +1,12 @@
-# Building a Bridge vs Fighting a Battle
+---
+title: Building a Bridge vs Fighting a Battle
+image: /assets/images/civil-war-battle.jpg
+author: Sam Schneider
+categories:
+  - agile
+  - waterfall
+layout: post
+---
 
 If you’re trying to decide between a waterfall project planning approach and an agile planning approach, you need to have a good understanding of the problem domain you’re trying to solve. If your problem domain features a set of sequential, dependent steps with little chance for the dependencies or steps to change, then a waterfall approach is an excellent choice. Nay, it is the best choice. 
 
