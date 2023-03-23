@@ -7,7 +7,7 @@ categories:
 layout: post
 ---
 
-Each of us has a a gift, which we tend to devalue because it comes easy to us, while we look at the gifts of others and wish they were ours.
+Each of us has a gift, which we tend to devalue because it comes easy to us, while we look at the gifts of others and wish they were ours.
 
 > “And I saw that all labor and all achievement spring from man's envy of his neighbor. This too is meaningless, a chasing after the wind.” - [King Solomon](https://web.mit.edu/jywang/www/cef/Bible/NIV/NIV_Bible/ECC+4.html)
 
