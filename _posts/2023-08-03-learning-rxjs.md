@@ -1,6 +1,6 @@
 ---
 title: Learning RxJs
-image: /assets/images/rxjs-logo.png
+image: /assets/images/rxjs-logo.svg
 author: Sam Schneider
 categories:
   - technology
