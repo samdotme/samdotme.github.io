@@ -63,6 +63,7 @@ a.nostyle {
   grid-gap: 10px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
   @include media-query($on-palm) {
     display: block;
   }
