@@ -4,6 +4,7 @@ image: /assets/images/rxjs-logo.svg
 author: Sam Schneider
 categories:
   - technology
+  - rxjs
 layout: post
 ---
 

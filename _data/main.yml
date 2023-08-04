@@ -1,8 +1,8 @@
 # Image, name, profession in the sidebar
 
-image: /assets/images/sam-schneider-bio.jpg
+image: /assets/images/sam-schneider-bio-square.jpg
 name: Sam Schneider
-profession: Software Architect
+profession: Architect. Team builder. Trainer.
 email: contact@samschneider.me # The contact form submissions will be received in this email address.
 
 #   ,-----.       ,--.                   ,---.  ,--.
