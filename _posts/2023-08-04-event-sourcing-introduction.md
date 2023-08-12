@@ -1,10 +1,11 @@
 ---
-title: Event Sourcing - Introduction
+title: Event Sourcing - Overview
 image: /assets/images/nicole-green-Xk4PNPdmPw4-unsplash.jpg
 author: Sam Schneider
 categories:
   - technology
   - event-sourcing
+  - event-sourcing-tutorial
 layout: post
 ---
 
