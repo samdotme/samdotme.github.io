@@ -9,7 +9,7 @@ categories:
 layout: post
 ---
 
-I flip up the top of my laptop and login to email. There are 36 new emails. I scan quickly and there it is, "From Mark Ruskins." I know it's going to be bad. We lost a critical shipment for the whole day yesterday, only finding it behind an office plant at the end of the day. I read through the contents, pretty much what I am used to by now, the phrases about "be held responsible" and "take a deep look at our systems." Good leaders work with their teams to understand and fix problems, bad leaders pass the problems to their subordinates and give deadlines when the problems are to be fixed. I don't have a good leader.
+I flip up the top of my laptop and login to email. There are 36 new emails. I scan quickly and there it is, "From Gerald Ruskins." I know it's going to be bad. We lost a critical shipment for the whole day yesterday, only finding it behind an office plant at the end of the day. I read through the contents, pretty much what I am used to by now, the phrases about "be held responsible" and "take a deep look at our systems." Good leaders work with their teams to understand and fix problems, bad leaders pass the problems to their subordinates and give deadlines when the problems are to be fixed. I don't have a good leader.
 
 I finish the email. If I didn't get so many like this it would probably affect me more, now I kinda just gloss over the familiar phrases. But there will a conference call later this week and that's when it'll actually be hard. Mark will wait until about 15 minutes into the meeting and then bring up the "issue that occured on April 27th." He will ask all kinds of penetrating questions so as make it clear that I have something seriously wrong in my operation, and that he has nothing to do with it.
 
@@ -59,4 +59,4 @@ She's really good about bringing gifts to lunches with long-lost friends.
 
 Turns out I was right because she's quickly off the phone and I'm back to aimlessly looking under shelves.
 
-
+[Next chapter >](/blog/event-sourcing-chapter-2)
