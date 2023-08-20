@@ -77,4 +77,4 @@ Judy walks in.
 
 "Oh dang," she says. "Well this is a bit late, but we found the package. It went out on the wrong truck. The driver just called and is bringing it back now."
 
-
+[< Previous chapter](/blog/event-sourcing-chapter-1) | [Next chapter >](/blog/event-sourcing-chapter-3)
