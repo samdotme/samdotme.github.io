@@ -91,6 +91,7 @@ Now I'm starting to understand.
 
 "I'm not going to recount the items every time," says Max. "That's way too much work."
 
+<<<<<<< HEAD
 "It seems like we have to keep track of our inventory based on the items on the shelves, but at the same time if something changes, we have a risk every time of making a mistake with what we say is on the shelves. As soon as we make a mistake, the source of truth is messed up."
 
 Suddenly a phrase from my conversation with Adil last week pops up: "The only thing you really care about from a business perspective is when the objects move."
@@ -164,5 +165,8 @@ We all look at her.
 "If Mark will give me the weekend, and you can give him the next Monday off to rest, I think we can at least have a prototype of this ledger thing that ties into your computer system."
 
 "I need some ice cream before we do this, whatever you call it, ledger thing," says Max.
+=======
+
+>>>>>>> adc1e4f (Completed most of chapter 5.)
 
 [< Previous chapter](/blog/event-sourcing-chapter-4) | [Next chapter >](/blog/event-sourcing-chapter-6)
