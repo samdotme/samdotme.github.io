@@ -91,6 +91,78 @@ Now I'm starting to understand.
 
 "I'm not going to recount the items every time," says Max. "That's way too much work."
 
+"It seems like we have to keep track of our inventory based on the items on the shelves, but at the same time if something changes, we have a risk every time of making a mistake with what we say is on the shelves. As soon as we make a mistake, the source of truth is messed up."
 
+Suddenly a phrase from my conversation with Adil last week pops up: "The only thing you really care about from a business perspective is when the objects move."
+
+I stand up. Everyone looks at me.
+
+"When I was having lunch with our friend Adil last week he said something that I didn't understand at the time, but I think I get now. He said that our business really only cared about when objects move, not when they're stationary.
+
+"Up until now, we've been talking about tracking inventory based on what's on the shelves, but if we want to prevent things from getting lost, we should also be tracking the movements of objects."
+
+"Movements and status changes when the items don't actually move but something important has happened, such as when a shipment moves from picked to canceled," chimes in Jenny.
+
+"Good edge case call out," says Rick. "Let's think of a more general name than 'movements' which will encompass changes that don't include movement."
+
+"Changes?" says Jenny.
+
+"Actions?" I offer.
+
+"Events?" says Lily.
+
+Rick goes into computer science mode. "'Changes' is good, but a bit restrictive. It's possible something could happen to a package that wouldn't really change its state. Like if we notified the customer that it had been shipped. The package would still be in the same state except that a notification had gone out. If the notification failed, we might even do it again, and tracking each of those as a state change might be hard."
+
+"'Actions' is better than changes, but to be picky, the word actions usually implies an actor, but some of the things we'll be dealing with might not have a clear actor. For example, what if a shipment becomes late? Who is the actor responsible for it becoming late."
+
+"'Events' I like the best, because it captures the same concepts as the other words, but doesn't imply as much."
+
+Max laughs, "I have no idea what you just said."
+
+Rick smiles: "Story of my life bro."
+
+Lily pulls us back on track. "So we need a kind of ledger of events that happen to all the packages in the system."
+
+Jenny raises her hand. I point to her. "Sorry mom, I'm not in college yet. What's a ledger?"
+
+"A ledger," says Jenny, "is something that accountants use track every change to the assets of a company. If the company makes a $100 from selling a certain category of product, they enter that $100 as a profit entry in the general ledger. Then they can use the entries in the ledger to add up the total number of income from different product categories."
+
+"Wait," says Rick. "That's the same way that git source control works. Each repository is stored as a series of changes. The previous changes are all played on top of each other in order to discover what the current state of the system is."
+
+"So you're saying accounts and computer programmers already use the kind of system Adil was suggesting?" I ask.
+
+"It seems so," says Lily.
+
+"Sounds too complex to build in a week," I say, "even if we had a staff of experienced programmers, which we don't."
+
+Rick shrugs and says, "Most of the time spent in software is dealing with edge cases and clarifying requirements. The proof of concept of the software can often be built much quicker. Right now, let's knock out the smart fridge management software requirements."
+
+"But Rick, we don't have a team to build this," I say. "Plus, even if we did, the investment in this would require me to go all the way to the executive team for approval."
+
+Rick waves his hand as if this objection is irrelevant. "Have you ever heard of a hackathon?" he asks.
+
+"Is that where a bunch of nerds get together for 48 hrs and compete to see who can come out with the best working software?" says Lily.
+
+We all look at her.
+
+"I read an article about it in some research I was doing," she says.
+
+"Yes," says Rick, "that is exactly right, it's where a bunch of nerds get together and write software with the sole goal of getting something working. They often ignore best practices, they rely on external libraries as much as possible, and they skirt basic security principles."
+
+"Doesn't a hackathon require real computer programmers?" I ask.
+
+"I'm sure you have at least one person that works on the computer system that I could do a hackathon with."
+
+"Rick, um, you know even if we had budget for this we couldn't pay your kind of salary," says Lily.
+
+"C'mon sis," he says, "I'm between jobs anyway. This sounds like a fun project."
+
+"Let's just pretend I was willing to risk my career on this actually working. We have a guy named Mark Kim. He is our in house expert on the computer system implementation, and I think he knows some basic programming too."
+
+"Let's also just pretend that Mark is willing to take on this project without ratting you out to management," says Lily. "How much time would you need?"
+
+"If Mark will give me the weekend, and you can give him the next Monday off to rest, I think we can at least have a prototype of this ledger thing that ties into your computer system."
+
+"I need some ice cream before we do this, whatever you call it, ledger thing," says Max.
 
 [< Previous chapter](/blog/event-sourcing-chapter-4) | [Next chapter >](/blog/event-sourcing-chapter-6)
