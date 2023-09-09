@@ -93,9 +93,9 @@ Just as I finish talking my phone rings. Is this scripted?
 
 "Hi Gerald," I say, how is it going? I put the phone on speaker because I want the team to know that this is not a drill.
 
-"I was just notified you lost package #1345693," he says (smugly if I have learned to read him over the phone).
+"I was just notified you lost a package for order #1345693," he says (smugly if I have learned to read him over the phone). I see Judy writing down the package number on a sheet of paper. She mouths it back to me. I give her a thumbs up.
 
-"I'll look into it tonight," I say.
+"We'll look into it tonight," I say.
 
 "Thanks Bill," he says, "if you don't find it before 8am tomorrow, don't bother reporting to work."
 
