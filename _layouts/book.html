@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<!--                            
+This layout is used for posts. Changing anything here will affect all posts(not pages)
+ -->
+
+{% include breadcrumbs.html %}
+
+<!-- <div class="meta" data-aos="fade-up">
+  <p>
+    <small>
+      <span>
+        <i class="fa fa-calendar" aria-hidden="true"></i> {{page.date |
+        date_to_string }}&nbsp;
+      </span>
+      <span>
+        <i class="fa fa-user" aria-hidden="true"></i> {{page.author }}&nbsp;
+      </span>
+
+      <span>
+        <i class="fa fa-clock-o" aria-hidden="true"></i> {% include
+        reading-time.html %}
+      </span>
+    </small>
+  </p>
+</div> -->
+
+<!-- <div
+  class="featured-image rounded shadow"
+  style="background-image: url({{page.image | relative_url }})"
+  data-aos="zoom-in"
+></div> -->
+
+<div class="lead">
+  {% if page.description %}{{ page.description }}{% endif %}
+</div>
+
+<div class="container">
+  <article>
+    {% if site.toc %} {% include toc.html html=content class="toc rev clearfix"
+    %} {% endif %} {{content}}
+  </article>
+</div>
+<div class="container text-center my-4">
+  <a class="btn btn-warning" href="/books/{{page.prefix}}/01" role="button">Read Chapter 1</a>
+</div>

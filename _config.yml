@@ -101,6 +101,9 @@ compress_html:
 
 
 collections:
+    books:
+        output: true
+        permalink: /books/:path/
     projects:
         output: true
         permalink: /projects/:path/

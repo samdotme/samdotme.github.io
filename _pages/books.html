@@ -1,0 +1,34 @@
+---
+layout: page
+title: Books
+permalink: /books/
+description: Novels that bring you into the world of programming without 20 years in the industry.
+---
+
+<p class="lead">
+  Get into the world of programming without 20 years in the industry. These books are designed to teach you complex concepts without drowning you in code.
+</p>
+
+{% assign sorted = site.books | sort: 'priority' %} {% for book in
+sorted %}
+<a href="{{book.url  | relative_url }}" class="nostyle">
+  <div
+    class="row work cards borders rounded overflow-hidden"
+    data-aos="fade-up"
+  >
+    <div class="col-md-6 work-ind">
+      <div
+        class="work-image"
+        style="background-image: url({{book.image | relative_url }})"
+      ></div>
+    </div>
+    <div class="col-md-6 details">
+      <h1 class="double-u">{{book.title}}</h1>
+      <p>{{book.description | truncate: 220}}</p>
+      <p class="date">
+        <strong>Topic:</strong><span> {{ book.topic }}</span>
+      </p>
+    </div>
+  </div>
+</a>
+{% endfor %}
