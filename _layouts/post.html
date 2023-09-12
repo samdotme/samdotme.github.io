@@ -32,6 +32,9 @@ This layout is used for posts. Changing anything here will affect all posts(not 
   style="background-image: url({{page.image | relative_url }})"
   data-aos="zoom-in"
 ></div>
+<div class="mt-3 mb-5 text-center">
+  {% if page.credit %} {{page.credit}} {% endif %}
+</div>
 
 <div class="container">
   <article>
