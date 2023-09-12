@@ -42,4 +42,4 @@ So you can see that for many simple apps, event sourcing is an overhead that's e
 
 ## Where we go from here
 
-Over the next few weeks I will write an introduction to event sourced architectures, starting not with code, but with pen and paper kinds of examples. I think the thing which makes event sourcing seem so daunting is the premature mixture of code. Event sourcing is a complex process, implemented with simple code. But when you look at a complex process implemented in code, sometimes it makes the code itself seem complex.
+I am playing with a concept inspired by great business books such as *[The Goal](https://www.amazon.com/Goal-Process-Ongoing-Improvement-ebook/dp/B002LHRM2O)* and *[The Unicorn Project](https://www.amazon.com/Unicorn-Project-Developers-Disruption-Thriving-ebook/dp/B07QT9QR41)* to take complex architectural concepts and set them in the framework of a story that explains the problems from which the concept arose. Keep an eye out for chapter one soon!
