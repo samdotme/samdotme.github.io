@@ -37,6 +37,9 @@ menu:
 
   - title: Blog
     link: /blog/
+  
+  - title: Books
+    link: /books/
 
   # - title: Contact
   #   link: /contact/

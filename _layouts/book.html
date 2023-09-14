@@ -33,16 +33,17 @@ This layout is used for posts. Changing anything here will affect all posts(not 
   data-aos="zoom-in"
 ></div> -->
 
-<div class="lead">
+<!-- <div class="lead">
   {% if page.description %}{{ page.description }}{% endif %}
-</div>
+</div> -->
 
-<div class="container">
-  <article>
-    {% if site.toc %} {% include toc.html html=content class="toc rev clearfix"
-    %} {% endif %} {{content}}
-  </article>
+<div class="container text-center my-5 mx-4">
+  <a class="btn btn-primary btn-lg" href="/chapters/{{page.prefix}}-ch01" role="button">Read Chapter 1</a>
 </div>
 <div class="container text-center my-4">
-  <a class="btn btn-warning" href="/chapters/{{page.prefix}}-ch01" role="button">Read Chapter 1</a>
+  {% if page.content %} 
+  <article>
+    {{ page.content }} 
+  </article>
+  {% endif %}
 </div>
