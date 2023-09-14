@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<!--                            
+This layout is used for posts. Changing anything here will affect all posts(not pages)
+ -->
+
+<!-- {% include breadcrumbs.html %} -->
+
+{% if page.chapter %}
+<h2>Chapter {{page.chapter}}</h2>
+{% endif %}
+
+{{content}}
