@@ -157,7 +157,7 @@ The phone book example is a good one where our intuition only serves us well if 
 
 The final Big O notation we'll discuss is `O(n^2)`. This is slow. If the 2 turns to a 3 it's WAY slower.
 
-It comes from nested loops, something that we intuitively know is a major algorithm slowdown. Sometimes it's needed though, so we need to know about it.
+It comes from nested loops, something that we intuitively know is a major algorithm slowdown.
 
 Bubble sort is a great example of this:
 

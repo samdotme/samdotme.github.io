@@ -104,9 +104,9 @@ collections:
     books:
         output: true
         permalink: /books/:path/
-    projects:
+    chapters:
         output: true
-        permalink: /projects/:path/
+        permalink: /chapters/:path/
 
 exclude:
     - .git

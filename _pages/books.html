@@ -11,24 +11,28 @@ description: Novels that bring you into the world of programming without 20 year
 
 {% assign sorted = site.books | sort: 'priority' %} {% for book in
 sorted %}
-<a href="{{book.url  | relative_url }}" class="nostyle">
-  <div
-    class="row work cards borders rounded overflow-hidden"
-    data-aos="fade-up"
-  >
-    <div class="col-md-6 work-ind">
-      <div
-        class="work-image"
-        style="background-image: url({{book.image | relative_url }})"
-      ></div>
-    </div>
-    <div class="col-md-6 details">
-      <h1 class="double-u">{{book.title}}</h1>
-      <p>{{book.description | truncate: 220}}</p>
-      <p class="date">
-        <strong>Topic:</strong><span> {{ book.topic }}</span>
-      </p>
+<!-- <a href="{{book.url  | relative_url }}" class="nostyle"> -->
+  <div class="container">
+    <div
+      class="row work cards borders rounded overflow-hidden"
+      data-aos="fade-up"
+    >
+      <div class="col-md-6 work-ind p-4">
+        <img src="{{book.image | relative_url }}" alt="" class="img-fluid" />
+      </div>
+      <div class="col-md-6 details">
+        <h1 class="double-u">{{book.title}}</h1>
+        <p>{{book.description | truncate: 220}}</p>
+        <p class="date">
+          <strong>Topic:</strong><span> {{ book.topic }}</span>
+        </p>
+        <p class="mt-4">
+          <a href="{{book.url  | relative_url }}" class="btn btn-primary"
+            >Read Now</a
+          >
+        </p>
+      </div>
     </div>
   </div>
-</a>
+<!-- </a> -->
 {% endfor %}
