@@ -159,14 +159,18 @@ The final Big O notation we'll discuss is `O(n^2)`. This is slow. If the 2 turns
 
 It comes from nested loops, something that we intuitively know is a major algorithm slowdown. Sometimes it's needed though, so we need to know about it.
 
-Here's a (contrived) example that filters a list to remove duplicates:
+Here's an example that checks a list for duplicates:
 
 ```js
-someItems.filter(item => {
-  const itemIsDuplicate = someItems.find(searchItem => searchItem === item);
-
-  return !itemIsDuplicate;
-});
+function containsDuplicates(someItems) {
+    for (let i = 0; i < someItems.length - 1; i++) {
+      for (let j = i + 1; j < someItems.length; j++) {
+        if (someItems[i] === someItems[j]) {
+          return true;
+        }
+      }
+  }
+}
 ```
 
 In the above example we loop through all of the items in `someItems`, but inside of that loop, we do another loop through potentially all of the items in `someItems` again to see if we can find a duplicate.
