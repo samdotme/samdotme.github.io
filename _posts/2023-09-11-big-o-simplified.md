@@ -159,19 +159,23 @@ The final Big O notation we'll discuss is `O(n^2)`. This is slow. If the 2 turns
 
 It comes from nested loops, something that we intuitively know is a major algorithm slowdown. Sometimes it's needed though, so we need to know about it.
 
-Here's a (contrived) example that filters a list to remove duplicates:
+Bubble sort is a great example of this:
 
 ```js
-someItems.filter(item => {
-  const itemIsDuplicate = someItems.find(searchItem => searchItem === item);
-
-  return !itemIsDuplicate;
-});
+function bubbleSort(someItems) {
+    for (let i = 0; i < someItems.length; i++) {
+      for (let j = 0; j < someItems.length; j++) {
+        if (someItems[j] > someItems[j + 1]) {
+          let temp = someItems[j + 1];
+          someItems[j + 1] = someItems[j];
+          someItems[j] = temp;
+        }
+      }
+    }
+}
 ```
 
-In the above example we loop through all of the items in `someItems`, but inside of that loop, we do another loop through potentially all of the items in `someItems` again to see if we can find a duplicate.
-
-While it may not always be correct, an intuitive way to think about exponents in Big O is that it is a count of how many nested loops you have.
+In the above example we loop through all of the items in `someItems` in order to make sure we visit every item for sort, but inside of that loop, we do a second loop through the same list to actually perform the sort. Because of this poor time complexity, if you get in an interview, suggest `mergeSort` as a superior alternative to `bubbleSort`.
 
 ## Final Words
 
