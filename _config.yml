@@ -111,6 +111,7 @@ collections:
 exclude:
     - .git
     - vendor
+    - node_modules
 
 
 # These plugins are supported by github by default and can be installed locally using ruby gems

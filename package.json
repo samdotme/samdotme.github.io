@@ -1,0 +1,23 @@
+{
+  "name": "samschneider.me",
+  "version": "1.0.0",
+  "description": "Sam Schneider.me personal blog",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samdotme/samdotme.github.io.git"
+  },
+  "author": "Sam Schneider",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samdotme/samdotme.github.io/issues"
+  },
+  "homepage": "https://github.com/samdotme/samdotme.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-image-resize": "^0.13.1"
+  }
+}

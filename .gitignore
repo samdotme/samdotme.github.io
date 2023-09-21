@@ -1,2 +1,4 @@
 ﻿_site
+assets/thumbnails
+node_modules
 *.DS_Store
