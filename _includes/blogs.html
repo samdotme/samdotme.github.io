@@ -8,7 +8,7 @@
     >
       <div
         class="project-image"
-        style="background-image: url({{item.image | relative_url}})"
+        style="background-image: url({{item.image | relative_url | replace: 'images', 'thumbnails' }})"
       ></div>
       <p class="title text-center">{{item.title}}</p>
     </div>
