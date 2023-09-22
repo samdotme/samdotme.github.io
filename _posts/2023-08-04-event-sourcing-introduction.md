@@ -1,6 +1,7 @@
 ---
 title: Event Sourcing - Introduction
 image: /assets/images/nicole-green-Xk4PNPdmPw4-unsplash.jpg
+credit: Image by <a href="https://unsplash.com/photos/Xk4PNPdmPw4">Nicole Green</a> on Unsplash.
 author: Sam Schneider
 categories:
   - technology
