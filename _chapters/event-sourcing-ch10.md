@@ -1,23 +1,24 @@
 ---
-title: Event Sourcing - Chapter 10
-image: /assets/images/package-delivery.jpg
-author: Sam Schneider
-categories:
-  - technology
-  - event-sourcing
-  - event-sourcing-tutorial
-layout: post
+title: Event Sourcing
+image: /assets/images/event-sourcing-cover-sm.png
+description: A warehouse manager teams up with his family to save his warehouse by implementing a software architectural pattern called event sourcing.
+topic: Event Sourcing
+chapter: 10
+prefix: event-sourcing
+signupLink: https://samschneider.ck.page/event-sourcing-book
+nextChapter: 11
+layout: chapter
 ---
 
 Two of the three current shift team leads are in my office almost shouting. They're saying that the software system is going nuts and they can't get any work done. They must really feel a lot more pressure about their daily efficiencies than I mean to be putting on them. Every few sentences they keep reiterating that whatever has changed will make their efficiencies plummet.
 
-My first response is to call Mark and yell something. I'm wiser than that. So I ask them to show me an example of something that used to work, but doesn't work anymore. One of the team leads in Walter Chin, who did the package hiding stunt for Ruskins the week before.
+My first response is to call Mark and yell something. I'm wiser than that. So I ask them to show me an example of something that used to work, but doesn't work anymore. One of the team leads is Walter Chin, who did the package hiding stunt for Ruskins the week before.
 
 He opens his corporate brick laptop and we wait for the inevitable loader screen of the behemoth central software system. Once it loads, he opens one of the orders he's working on.
 
 "This order has just been picked. It needs to go to shipping, but I can't mark it that way anymore. Just all of the sudden it starts erroring."
 
-The urge to write an ALL CAPS yell email to Mark returns. How could they get this wrong, didn't Judy check this. Instead I open up the training handbook and look at the "picking completed" state.
+The urge to write an ALL CAPS email to Mark returns. How could they get this wrong, didn't Judy check this. Instead I open up the training handbook and look at the "picking completed" state.
 
 "But Walter," I say, "ready to ship isn't the next state. The next state is post-picking."
 
@@ -43,7 +44,7 @@ I hold my breath. You never know if programmers are going to tell you your reque
 
 "DevOps bro," he says.
 
-I shouldn't have asked.
+Whatever that means. I shouldn't have asked.
 
 We work with the team leads for the next few days to refine the legal status transitions. It turns out that after more investigation we find that many of the lost packages happen during some of the shortcuts taken in the system. Sometimes people move an order to "shipped" and skip the "picked" state altogether, which doesn't correspond to what's actually happening on the floor.
 
@@ -57,6 +58,18 @@ I receive a call at 2:30pm.
 
 "Bill, it's Gerald. I don't know what you've done over there, but I can't fire you yet since you haven't lost any packages these two weeks. I should let you know that there's talk brewing here at corporate about closing down your warehouse though."
 
+I let him think I'm surprised. "But you can't do that, we're just starting to get on top of things here!" I say.
+
+"Listen Bill, I'm kind of impressed by whatever it is that you've done, but since your warehouse is closer to the city, it costs $2/hr more for every employee. We have to cut costs."
+
+"What if I can make my people $4/hr more productive than any other warehouse?" I ask. I have no idea what we would use to measure that.
+
+"That might give me some ammunition," he says.
+
+"Give us another month to prove ourselves," I say.
+
+"Not losing a package for two weeks has made me curious. But it hasn't made me a believer. I can get you a month but I can't promise you'll have more than that. Good luck," he says and hangs up.
+
 I call Judy and Mark into my office.
 
 "We've succeeded in not losing a single package since we implemented the event ledger. I just heard from Gerald what Mark told us earlier. Corporate is looking at closing down our location to cut costs. What else can we do with the data we have?"
@@ -67,21 +80,19 @@ I call Judy and Mark into my office.
 
 That night after dinner, I grab Lily's hand and lead her out onto the back deck. It's still cool in the evenings. The trees above are gently rustling in the wind.
 
-"Corporate is planning to close down the plant. It sounds like me might need a miracle to keep it open even though we haven't lost a single package since we implemented the even ledger. Judy thinks we should call Adil."
+"Corporate is planning to close down the plant. It sounds like me might need a miracle to keep it open even though we stopped losing packages. Judy was asking me if Adil would have any input on this. Think we should call him?"
 
 Lily gives me a thumbs up and pulls out her phone from a jacket pocket and hits the video conferencing button to call Adil. He answers almost immediately.
 
 "Lily, Bill!" he says. "To what do I owe the pleasure?"
 
-"Your suggestion from lunch a few weeks ago worked. We build a software system to track the warehouse as a series of events instead of a count of items on hand. Since we did that, we haven't lost a single item."
+"Your suggestion from lunch a few weeks ago worked. We built a software system to track the warehouse as a series of events instead of a sum of items on hand. Since we did that, we haven't lost a single item."
 
 "That's rather impressive," he says.
 
-"Now, the company is planning to close down the warehouse. We need to find something to prove that we can deliver something that's worth keeping us open."
+"But now the company is planning to close down the warehouse because they think the workers are too expensive by $2/hr. We need to make the operation more productive per worker for them to keep us open. Since you knew to suggest thinking about things in terms of events, we wondered if you had anything else up your sleeve."
 
-"That really depends on the company. What do they struggle with?"
-
-"Before, lost packages was our biggest thing. Now, I'm not sure."
+He doesn't answer for a moment and I feel silly having called. What subject does he even teach anyway?
 
 "There are many things you can do with the data you are now accumulating. You need to find their biggest struggle. Once you have that, you can start addressing it with your data."
 
@@ -99,6 +110,16 @@ Adil begins to laugh. "You'll be fine then. As long as this project remains his 
 
 "Rick and I did some cooperative research several years back. He was working on a Ph.D., but got bored with it. Rick is how Lily and I met."
 
+I bring us back to the point. "We need to increase the productivity of our warehouse workers. If we can prove that, they may keep the warehouse open."
 
+"How do you currently measure that?" 
+
+"We measure it differently for every kind of worker," I admit. "Maybe we can decrease the lead time for shipments instead?"
+
+I can seem him smile on the call. "That will probabably happen quite naturally as you implement the next improvements," he says, "and you should highlight it once it does, but no, I do not think it is sufficient. Your company seems like one to which only money will speak. You need to find a financial metric to improve on, and it needs to prove that your warehouse operation is actually cheaper than the other ones."
+
+Lily blurts out, "But how?"
+
+"How far are you willing to drive?" he asks.
 
 [< Previous chapter](/blog/event-sourcing-chapter-9) | [Next chapter >](/blog/event-sourcing-chapter-11)
